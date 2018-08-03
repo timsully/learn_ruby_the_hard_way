@@ -1,12 +1,23 @@
 house, food, location, mansion = ARGV.clear
 
-puts "Do you live in a #{house}?"
-user_house_input = gets.chomp
+puts "What state do you live in?"
+house = gets.chomp
 
-puts "Have you had a #{food} before?"
-user_food_input = gets.chomp
+puts "You live in #{house}."
 
-puts "\n\tHave you eaten a in a #{location} before?"
+puts "What is your favorite food?"
+food = gets.chomp
 
-puts "Food in a #{mansion} makes it that much better."
-user_mansion_input = gets.chomp
+puts "Your favorite food is #{food}."
+
+
+
+puts "\n\tHave you eaten a in Serbia before?"
+location = gets.chomp
+
+puts "#{location} is my answer."
+
+puts "Where is food best eaten?"
+mansion = gets.chomp
+
+puts "#{mansion}"
