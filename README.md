@@ -30,3 +30,5 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 14 - Prompting Passing](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex14.rb)
 
 [Exercise 15 - Reading Files](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex15.rb)
+
+[Exercise 16 - Reading and Writing Files](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex16.rb)
