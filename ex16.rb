@@ -40,20 +40,20 @@ line3 = $stdin.gets.chomp
 puts "I'm going to write these to the file."
 # Once the program grabs all the user input it then proceeds to writing the datastream to the given output stream
 # in the parameters for each line we write out user input from line1 into the file
-target.write(line1)
+target.write(line1 + "\n" + line2 + "\n" + line3 + "\n")
 # Add an ASCII linefeed
-target.write("\n")
+#target.write("\n")
 # Write user input from what is assigned to the line2 variable and output it to the the file labeled filename which
 # is assigned to our target variable which is essentially open(filename, 'w') filename being ARGV.first grabbing
 # the first argument that the user inputs from the command line and then or next command being the string 'w' is
 # a permission modifier that allows us to write into the file we specifed.
-target.write(line2)
+#target.write(line2)
 # Add ASCII linefeed for a visual line break to appear for the next user input to display on its own line
-target.write("\n")
+#target.write("\n")
 # Grabs the user input assigned to the variable line3 and writes it to the file specfied
-target.write(line3)
+#target.write(line3)
 # Adds another ASCII linefeed
-target.write("\n")
+#target.write("\n")
 # Prompting the user that the file will close before it actually does
 puts "And finally, we close it."
 # This then closes the current file and skips to the next file in ARGV. If there are no more files to open, it
