@@ -32,3 +32,7 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 15 - Reading Files](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex15.rb)
 
 [Exercise 16 - Reading and Writing Files](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex16.rb)
+
+[Exercise 17 - More Files](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex17.rb)
+
+[Exercise 18 - Names, Variables, Code, Functions](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex18.rb)
