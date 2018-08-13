@@ -12,7 +12,9 @@ end
 def rewind(f)
   # The f variable is just like we've had in other functions in exercise 18, except this time it's a file
   # Moving to the start of the file with seek, where it seeks a particular location that we specify in
-  # the parameters which has an argument of 0, thus moving us to the start of the file.
+  # the parameters which has an argument of 0, thus moving us to the start of the file. Code that scans
+  # each byte of the file until if finds a \n character then stops reading the file to return that it has
+  # found so far.
   f.seek(0)
 end
 
@@ -22,7 +24,7 @@ def print_a_line(line_count, f)
   # whatever is being passed into the two operators to be converted into strings. Passing in
   # line_count and f with gets.chomp attached to it which will grab the user's input and
   # remove the line break.
-  puts "#{line_count}, #{f.gets.chomp}"
+  puts "#{line_count}, #{f.gets} \n"
   # Here we are calling our function to end
 end
 
@@ -61,12 +63,12 @@ current_line = 1
 print_a_line(current_line, current_file)
 
 # Assigning current_line equal to the current value of current_line + 1
-current_line = current_line + 1
+current_line += 1
 # Calling the function print_a_line again with the same argument as current line will now
 # have an integer value of 2
 print_a_line(current_line, current_file)
 
 # Assigning current_line equal to current_line + 1 which will now have an int value of 3
-current_line = current_line + 1
+current_line += 1
 # Calling the print_a_line function and passing in two args, current_line and current_file
 print_a_line(current_line, current_file)
