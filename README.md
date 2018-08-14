@@ -42,3 +42,7 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 20 - Functions and Files](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex20.rb)
 
 [Exercise 21 - Functions Can Return Something](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex21.rb)
+
+[Exercise 24 - More Practice](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex24.rb)
+
+[Exercise 25 - Even More Practice](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex25.rb)
