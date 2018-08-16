@@ -46,3 +46,5 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 24 - More Practice](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex24.rb)
 
 [Exercise 25 - Even More Practice](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex25.rb)
+
+[Exercise 26 - Congratulations, Take a Test!](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex26.rb)
