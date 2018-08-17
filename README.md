@@ -48,3 +48,13 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 25 - Even More Practice](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex25.rb)
 
 [Exercise 26 - Congratulations, Take a Test!](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex26.rb)
+
+[Exercise 28 - Boolean Practice](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex28.rb)
+
+[Exercise 29 - What If](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex29.rb)
+
+[Exercise 30 - Else and If](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex30.rb)
+
+[Exercise 31 - Making Decisions](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex31.rb)
+
+[Exercise 32 - Loops and Arrays](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex32.rb)
