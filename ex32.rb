@@ -8,6 +8,12 @@ for number in the_count
   puts "This is count #{number}"
 end
 
+# preferred way Ruby for-loops are written for the one above
+the_count do |number|
+  puts "This is count #{number}"
+end
+
+
 # same as above, but in a more Ruby style
 # this and the next one are the preferred
 # way Ruby for-loops are written
