@@ -58,3 +58,5 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 31 - Making Decisions](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex31.rb)
 
 [Exercise 32 - Loops and Arrays](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex32.rb)
+
+[Exercise 33 - While Loops](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex33.rb)
