@@ -4,7 +4,7 @@ i = 0
 # that will be stored as elements in the array and be able to
 # target them individuallt via index
 numbers = []
-
+x = 1
 # while i is less than 6 execute its respective code block
 while i < 6
   # Outputs a string and the variable i which increments
@@ -14,7 +14,7 @@ while i < 6
   # to use the push method to add the value of i into the array
   numbers.push(i)
   # Increment by 1 each time it loops until the expression is false
-  i += 1
+  i += x
   # Outputs the string with the array and how far it has incremented
   puts "Numbers now: ", numbers
   puts "At the bottom i is #{i}"
@@ -24,3 +24,9 @@ puts "The numbers: "
 
 # remember you can write this 2 other ways?
 numbers.each { |num| puts num }
+
+
+(0..6).each do |i|
+  puts "adding #{i}"
+  numbers.push(i)
+end
