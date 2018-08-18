@@ -60,3 +60,5 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 32 - Loops and Arrays](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex32.rb)
 
 [Exercise 33 - While Loops](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex33.rb)
+
+[Exercise 34 - Accessing Elements of Arrays](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex34.rb)
