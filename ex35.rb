@@ -13,6 +13,7 @@ def start
   else
     dead("You stumble around the room until you starve.")
   end
+
 end
 
 def bear_room
@@ -38,6 +39,7 @@ def bear_room
     else
       puts "I got no idea what that means."
     end
+
   end
 end
 
@@ -57,6 +59,7 @@ def cthulhu_room
   else
     cthulhu_room
   end
+
 end
 
 
@@ -79,6 +82,7 @@ def gold_room
   else
     dead("You greedy bastard!")
   end
+
 end
 
 
