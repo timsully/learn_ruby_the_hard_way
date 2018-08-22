@@ -164,7 +164,7 @@ end
 def seventh_step
   puts "Type help for a set of commands"
 
-  print "> "
+  print "repo: "
   type_help = $stdin.gets.chomp
 
   if type_help == "help"
@@ -196,6 +196,24 @@ end
 # Use a conditional statement
 def eighth_step
   story_line_two
+  puts "\nNow that we've made all of our changes. What's next?"
+  puts "1. git status - lists all new or modified files to be committed"
+  puts "2. git add - "
+  puts "3. git branch "
+
+  print "repo:  "
+  eight_step_input = $stdin.gets.chomp
+
+  if eighth_step_input == "1"
+    puts "Smart, but check to see what branch you're on first."
+    eighth_step
+  elsif eighth_step_input == "2"
+    puts "You should probably check what has been modified to before using this command blindly."
+    eighth_step
+  else eighth_step_input == "3"
+    puts "Not too shabby mate."
+    # call the next function
+  end
 
 end
 
