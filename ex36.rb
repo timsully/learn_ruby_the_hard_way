@@ -93,6 +93,7 @@ end
 
 
 # If 'touch test.txt' was typed in terminal then it is correct
+# Then open test.txt with your preferred text editor with:  <application> test.txt
 def fifth_step
   puts "Now you're in your repo"
   puts "\nNext, let's create a file."
@@ -124,26 +125,47 @@ def fifth_step
     puts "Opening text editor"
     sleep(0.2)
     puts "Vuala! You have opened your text file."
-    # call the next function
+    sixth_step
   else
     puts "----------------------------"
     puts "Better luck next time, pal!"
     rwx_file
   end
 
+end
+
+
+# Bit of history to guide user along the program
+def story_line
+ puts '''Now that we\'ve opened your file lets pretend we input data into the file by typing stuff in and saved it.'''
+end
+
+
+# Press Y or N to finish writing file which will save or close it
+def sixth_step
+  story_line
+  puts "Press Y or N to save or exit"
+
+  print "\nrepo: "
+  grab_input = $stdin.gets.chomp
+
+  if grab_input == "Y"
+    puts "File saved, proceed."
+    seventh_step
+  else
+    "File not saved, goodbye."
+    exit(0)
+  end
 
 end
 
 
-# Then open test.txt with your preferred text editor with:  <application> test.txt
+
+def seventh_step
+  puts "Type help"
 
 
-
-
-
-
-
-# Press Y or N to finish writing file which will save or close it
+end
 
 
 # Then open back up terminal
