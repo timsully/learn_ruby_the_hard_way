@@ -19,6 +19,7 @@
     dead("Thank you, come again with a yes or a no.")
   end
 
+
 # Activate your preferred text editor via terminal hehe
 
 
