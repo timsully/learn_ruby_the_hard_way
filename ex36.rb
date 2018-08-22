@@ -34,7 +34,7 @@ def second_step
 
   if second_input == "1" || second_input == "Turn on computer"
     puts "You are correct. Having your computer ON is a must."
-    # call the next function
+    third_step
   else
     puts "I dont\'t know what to tell ya."
     exit(0)
@@ -42,8 +42,35 @@ def second_step
 
 end
 
-start
+
 # Activate your preferred text editor via terminal hehe
+def third_step
+  puts "So now what? You have your computer turned on, but you need a file to add to your repository.\n"
+  puts '''How do we got about this? Well, here is one way on macOS. My apologies to the other operating systems
+  out and about this program is not intended for you, but similar approaches may apply.'''
+
+  puts "\nNow open your terminal"
+  print "> "
+  open_terminal = $stdin.gets.chomp
+
+  if open_terminal == "open terminal" || open_terminal == "open" || open_terminal == "open sesame" || open_terminal == "abracadabra"
+    puts "Opening Terminal..."
+    sleep(2)
+    puts "Terminal Open! Great Job!"
+    # call next function
+  else
+    puts "You need to open your terminal brah."
+    sleep(1)
+    puts "Shutting"
+    sleep(1)
+    puts "Off"
+    sleep(1)
+    puts "Now"
+    sleep(2)
+    puts "NOOB!"
+  end
+
+end
 
 
 # Create a new file and open it in your preferred text editor
@@ -83,3 +110,10 @@ start
 
 
 # Once that is done prompt user with a completion
+
+
+
+
+
+
+start
