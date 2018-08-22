@@ -1,5 +1,23 @@
 # The first step would be to turn on your coomputer
 
+  puts '''Welcome, you have now entered Tim\'s first ever program where he actually
+  implemented his thought and wrote out his actions on a piece of paper to write
+  out a so called program thanks to Learn Ruby the Hard Way by Zed Shaw. As a Noob
+  Rubyist, I will guide you in my pointless, yet somewhat educational program that
+  will show you how to upload a file to github, if you already have a github repository
+  that is, and upload a file to your repository. WOOHOO! Now, let\'s get started, shall we?
+  '''
+
+  puts "Too much text above right? Yes, or no?"
+
+  print "> "
+  too_much_text = $stdin.gets.chomp
+
+  if too_much_text == "yes" || too_much_text == "no"
+    puts "You are damn right!"
+  else
+    dead("Thank you, come again with a yes or a no.")
+  end
 
 # Activate your preferred text editor via terminal hehe
 
