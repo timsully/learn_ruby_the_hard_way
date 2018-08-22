@@ -92,6 +92,7 @@ def fourth_step
 end
 
 
+# If 'touch test.txt' was typed in terminal then it is correct
 def fifth_step
   puts "Now you're in your repo"
   puts "\nNext, let's create a file."
@@ -101,24 +102,45 @@ def fifth_step
   touch_file = $stdin.gets.chomp
 
   if touch_file == "touch test.txt"
+    puts "Bingo!"
+    sleep(0.5)
     puts "test.txt created"
     # call sixth_step
   else
+    puts "-------------------------------"
     puts "Syntax error. Please try again."
     puts "CTRL + C to quit"
     fifth_step
   end
 
+  puts "Now let's open your test.txt file and write some stuff to it"
+  puts "\nType the following: <texteditor> test.txt"
+  print "repo: "
+  rwx_file = $stdin.gets.chomp
+
+  if rwx_file == "test.txt" || rwx_file == "atom test.txt"
+    puts "Opening test.txt in the text editor of your choice..."
+    sleep(0.2)
+    puts "Opening text editor"
+    sleep(0.2)
+    puts "Vuala! You have opened your text file."
+    # call the next function
+  else
+    puts "----------------------------"
+    puts "Better luck next time, pal!"
+    rwx_file
+  end
+
+
 end
 
 
-
-
-
-# If 'touch test.txt' was typed in terminal then it is correct
-
-
 # Then open test.txt with your preferred text editor with:  <application> test.txt
+
+
+
+
+
 
 
 # Press Y or N to finish writing file which will save or close it
@@ -127,7 +149,7 @@ end
 # Then open back up terminal
 
 
-# Prompt the user to ask what is a way of uploading to github via terminal?
+# Prompt the user to ask what is a way of uploading to github via terminal? BONUS: have it type help to access what is supposibly documentation on github stuff
 
 
 # First step, change directory to file, example could be `cd ~/desktop/test.txt'
