@@ -57,7 +57,7 @@ def third_step
     puts "Opening Terminal..."
     sleep(2)
     puts "Terminal Open! Great Job!"
-    # call next function
+    fourth_step
   else
     puts "You need to open your terminal brah."
     sleep(1)
@@ -74,6 +74,28 @@ end
 
 
 # Create a new file and open it in your preferred text editor
+def fourth_step
+  puts "In your terminal change your directory to your repository aka repo."
+  puts "\nType cd ~/repo"
+
+  print "> "
+  change_dir = $stdin.gets.chomp
+
+  if change_dir == "cd ~/repo"
+    puts "repo: "
+    # call next function
+  else
+    puts "Incorrect, try again."
+    fourth_step
+  end
+
+end
+
+
+
+
+
+
 
 
 # If 'touch test.txt' was typed in terminal then it is correct
