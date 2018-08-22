@@ -83,7 +83,7 @@ def fourth_step
 
   if change_dir == "cd ~/repo"
     puts "repo: "
-    # call next function
+    fifth_step
   else
     puts "Incorrect, try again."
     fourth_step
@@ -92,7 +92,24 @@ def fourth_step
 end
 
 
+def fifth_step
+  puts "Now you're in your repo"
+  puts "\nNext, let's create a file."
+  puts "\nType touch test.txt"
 
+  print "repo: "
+  touch_file = $stdin.gets.chomp
+
+  if touch_file == "touch test.txt"
+    puts "test.txt created"
+    # call sixth_step
+  else
+    puts "Syntax error. Please try again."
+    puts "CTRL + C to quit"
+    fifth_step
+  end
+
+end
 
 
 
