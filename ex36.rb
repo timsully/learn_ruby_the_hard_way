@@ -160,25 +160,44 @@ def sixth_step
 end
 
 
-
+# Prompt the user to ask what is a way of uploading to github via terminal? BONUS: have it type help to access what is supposibly documentation on github stuff
 def seventh_step
-  puts "Type help"
+  puts "Type help for a set of commands"
 
+  print "> "
+  type_help = $stdin.gets.chomp
+
+  if type_help == "help"
+    puts "These are a list of commands."
+    puts '''
+      $ git status - Lists all new or modified files to be committed
+      $ git add [file] - Snapshots the file in preparation for versioning
+      $ git reset [file] - Unstages the file, but preserve its contents
+      $ git commit -m "[descriptive message]" - Records file snapshots permanently in version history
+      $ git branch - Lists all local branches in the current repository
+      $ git push [alias] [branch] - Uploads all local branch commits to GitHub
+    '''
+    sleep(3)
+    eighth_step
+  else
+    puts "Type in help to continue"
+  end
 
 end
 
 
-# Then open back up terminal
-
-
-# Prompt the user to ask what is a way of uploading to github via terminal? BONUS: have it type help to access what is supposibly documentation on github stuff
-
-
-# First step, change directory to file, example could be `cd ~/desktop/test.txt'
+def story_line_two
+  puts "Now that you have a list of commands read and UNDERSTAND them."
+  puts "We will be using some of these commands, lets proceed."
+end
 
 
 # Question user with three options, A being do git status or B, git add <filename>.txt or C, git branch ???
 # Use a conditional statement
+def eighth_step
+  story_line_two
+
+end
 
 
 # If A then go to check branch, if B 'try again', if C 'try again'
