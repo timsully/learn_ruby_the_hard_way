@@ -198,8 +198,8 @@ def eighth_step
   story_line_two
   puts "\nNow that we've made all of our changes. What's next?"
   puts "1. git status - lists all new or modified files to be committed"
-  puts "2. git add - "
-  puts "3. git branch "
+  puts "2. git add [file] - snapshots the file in preparation for versioning"
+  puts "3. git branch [branch-name] - creates a new branch"
 
   print "repo:  "
   eight_step_input = $stdin.gets.chomp
@@ -208,32 +208,52 @@ def eighth_step
     puts "Smart, but check to see what branch you're on first."
     eighth_step
   elsif eighth_step_input == "2"
-    puts "You should probably check what has been modified to before using this command blindly."
+    puts "You should probably check what has been modified before using this command blindly."
     eighth_step
   else eighth_step_input == "3"
     puts "Not too shabby mate."
-    # call the next function
+    ninth_step
   end
 
 end
 
 
-# If A then go to check branch, if B 'try again', if C 'try again'
-# Possibly hint at user the solution if failed to many times? (challenge)
-
-
 # After adding ask user the proper syntax for committing, else prompt user to do research on how to do so at
 # the actual URL of Github docs
+def ninth_step
+  puts "Now commit your file to create a snapshot of your file and store it in the version history."
+  puts "Hint: Use one of the commands from help."
+
+  print "repo: "
+  commit_input = $stdin.gets.chomp
+
+  if commit_input == "git commit -m \"message\""
+    puts "File added successfully!"
+    # call next function
+  else
+    puts "Incorrect, try again."
+    ninth_step
+  end
+
+end
 
 
 # When everything is correct git push
-
-
 # Once that is done prompt user with a completion
+def tenth_step
+  puts "One last step, push to the remote repo!"
 
+  print "repo: "
+  tenth_step = $stdin.gets.chomp
 
+  if tenth_step == "git push"
+    puts "Congratulations!"
+  else
+    puts "So close, try again!"
+    tenth_step
+  end
 
-
+end
 
 
 start
