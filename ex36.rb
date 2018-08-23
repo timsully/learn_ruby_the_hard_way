@@ -199,10 +199,10 @@ def eighth_step
   puts "\nNow that we've made all of our changes. What's next?"
   puts "1. git status - lists all new or modified files to be committed"
   puts "2. git add [file] - snapshots the file in preparation for versioning"
-  puts "3. git branch [branch-name] - creates a new branch"
+  puts "3. git branch - Lists all local branches in the current repository"
 
   print "repo:  "
-  eight_step_input = $stdin.gets.chomp
+  eighth_step_input = $stdin.gets.chomp
 
   if eighth_step_input == "1"
     puts "Smart, but check to see what branch you're on first."
@@ -229,7 +229,7 @@ def ninth_step
 
   if commit_input == "git commit -m \"message\""
     puts "File added successfully!"
-    # call next function
+    tenth_step
   else
     puts "Incorrect, try again."
     ninth_step
