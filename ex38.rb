@@ -33,6 +33,8 @@ while stuff.length != 10
 # End of function
 end
 
+# Outputs a string that uses expression substitution to display
+# the stuff array as a string literal
 puts "There we go: #{stuff}"
 
 puts "Let's do some things with stuff."
@@ -40,7 +42,16 @@ puts "Let's do some things with stuff."
 # Grabbing the number 1 indexed element in the array. Using
 # cardinal numbers to grab the values
 puts stuff[1]
+# Grabs the last element in the array
 puts stuff[-1] #whoa! fancy
+# Removes and returns the last element of the array
 puts stuff.pop()
+# Concatenates all the elements assigned equal to the stuff array
+# and uses a delemiter which is a space to concatenate it into
+# one string separated by space, beautiful I tell youm beautiful!
 puts stuff.join(' ')
+# Outputs the indexed elements 3, 4, and 5 of the stuff array
+# and uses the octothorpe as the delimiter. The two dots ..
+# indicate a range that runs from the beginning to the end
+# inclusively
 puts stuff[3..5].join("#")
