@@ -66,3 +66,5 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 35 - Branches and Functions](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex35.rb)
 
 [Exercise 36 - Designing and Debugging](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex36.rb)
+
+[Exercise 38 - Doing Things to Arrays](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex38.rb)
