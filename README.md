@@ -68,3 +68,5 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 36 - Designing and Debugging](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex36.rb)
 
 [Exercise 38 - Doing Things to Arrays](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex38.rb)
+
+[Exercise 39 - Hashes, Oh Lovely Hashes](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex39.rb)
