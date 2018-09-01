@@ -1,4 +1,4 @@
-require './dict.rb'
+require './dict_copy.rb'
 
 # creates a mapping of state to abbreviation
 states = Dict.new()
@@ -10,7 +10,7 @@ Dict.set(states, 'Michigan', 'MI')
 
 # create a basic set of states and some cities in them
 cities = Dict.new()
-Dict.set(cities, 'CA', San Franisco)
+Dict.set(cities, 'CA', 'San Francisco')
 Dict.set(cities, 'MI', 'Detroit')
 Dict.set(cities, 'FL', 'Jacksonville')
 
