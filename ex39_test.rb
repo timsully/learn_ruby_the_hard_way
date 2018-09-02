@@ -1,4 +1,4 @@
-require './dict_copy.rb'
+require './dict.rb'
 
 # creates a mapping of state to abbreviation
 states = Dict.new()
