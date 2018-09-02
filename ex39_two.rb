@@ -53,10 +53,10 @@ end
 
 puts '-' * 10
 # by default ruby says "nil" when something isn't in there
-state = states['Texas']
+state = states['Guanajuato']
 
 if !state
-  puts "Sorry, no Texas!"
+  puts "Sorry, no Guanajuato!"
 end
 
 # default values using ||= with the nil result
