@@ -72,3 +72,5 @@ This repository will contain all the exercise files I create to practice dabblin
 [Exercise 39 - Hashes, Oh Lovely Hashes](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex39.rb)
 
 [Exercise 40 - Modules, Classes, Objects](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex40.rb)
+
+[Exercise 41 - Learning to Speak Object Oriented](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex41.rb)
