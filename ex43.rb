@@ -208,13 +208,13 @@ class Finished < Scene
 end
 
 class Map
-    @@scenes = [
+    @@scenes = {
         'central_corrridor' => CentralCorridor.new(),
         'laser_weapon_armory' => LaserWeaponArmory.new(),
         'the_bridge' => TheBridge.new(),
         'escape_pod' => EscapePod.new(),
         'death' => Death.new()
-    ]
+    }
 
 
     def initialize(start_scene)
