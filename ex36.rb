@@ -112,6 +112,7 @@ def fifth_step
     puts "Syntax error. Please try again."
     puts "CTRL + C to quit"
     fifth_step
+    return
   end
 
   puts "Now let's open your test.txt file and write some stuff to it"

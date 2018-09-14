@@ -1,4 +1,4 @@
-class Scene 
+class Scene
     def enter()
         puts "This scene if not yet configured. Subclass it and implement enter()."
         exit(1)
@@ -15,7 +15,7 @@ class Engine
     def play()
         current_scene = @scene_map.opening_scene()
         last_scene = @scene_map.next_scene('finished')
-    
+
         while current_scene != last_scene
             next_scene_name = current_scene.enter()
             current_scene = @scene_map.next_scene(next_scene_name)
@@ -103,7 +103,8 @@ class LaserWeaponArmory < Scene
     puts "and you need the code to get the bomb out.  If you get the code"
     puts "wrong 10 times then the lock closes forever and you can't"
     puts "get the bomb.  The code is 3 digits."
-    code = "#{rand(1..9)}#{rand(1..9)}#{rand(1..9)}"
+    #code = "#{rand(1..9)}#{rand(1..9)}#{rand(1..9)}"
+    code = "123"
     print "[keypad]> "
     guess = $stdin.gets.chomp
     guesses = 0
@@ -115,7 +116,7 @@ class LaserWeaponArmory < Scene
       guess = $stdin.gets.chomp
     end
 
-    if guess == code
+    if guess == "123"
         puts "The container clicks open and the seal breaks, letting gas out."
         puts "You grab the neutron bomb and run as fast as you can to the"
         puts "bridge where you must place it in the right spot."
@@ -181,9 +182,10 @@ class EscapePod < Scene
     puts "but you don't have time to look.  There's 5 pods, which one"
     puts "do you take?"
 
-    good_pod = rand(1..5)
+    #good_pod = rand(1..5)
+    good_pod = "123"
     print "[pod #]> "
-    guess = $stdin.gets.chomp.to_i
+    guess = $stdin.gets.chomp
 
     if guess != good_pod
       puts "You jump into pod %s and hit the eject button." % guess
