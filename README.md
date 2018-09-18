@@ -77,4 +77,4 @@ This repository will contain all the exercise files I create to practice dabblin
 
 - [x] [Exercise 42 - Is-A, Has-A, Objects, and Classes](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex42.rb)
 
-- [ ] [Exercise 43 - Basic Object-Oriented Analysis and Design](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex43.rb)
+- [x] [Exercise 43 - Basic Object-Oriented Analysis and Design](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex43.rb)
