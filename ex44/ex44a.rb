@@ -12,4 +12,4 @@ dad = Parent.new()
 son = Child.new()
 
 dad.implicit() 
-son.implicit() 
+son.implicit()
