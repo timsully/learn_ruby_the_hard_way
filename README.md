@@ -80,3 +80,7 @@ This repository will contain all the exercise files I create to practice dabblin
 - [x] [Exercise 43 - Basic Object-Oriented Analysis and Design](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex43.rb)
 
 - [x] [Exercise 44 - Inheritance Versus Composition](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex44.rb)
+
+- [x] [Exercise 45 - You Make a Game](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex45.rb)
+
+- [ ] [Exercise 46 - A Project Skeleton]  (https://github.com/timsully/learn_ruby_the_hard_way/tree/master/ex46/projects/skeleton)
