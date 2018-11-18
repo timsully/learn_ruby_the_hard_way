@@ -1,4 +1,4 @@
-require "ex47/game.rb"
+require "ex47/lib/game.rb"
 require "test/unit"
 
 class TestEx47 < Test::Unit::TestCase
