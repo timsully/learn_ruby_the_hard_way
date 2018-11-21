@@ -84,3 +84,5 @@ This repository will contain all the exercise files I create to practice dabblin
 - [x] [Exercise 45 - You Make a Game](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex45.rb)
 
 - [x] [Exercise 46 - A Project Skeleton](https://github.com/timsully/learn_ruby_the_hard_way/tree/master/ex46/projects/skeleton)
+
+- [x] [Exercise 47 - Automated Testing](https://github.com/timsully/learn_ruby_the_hard_way/tree/master/ex47/skeleton)
