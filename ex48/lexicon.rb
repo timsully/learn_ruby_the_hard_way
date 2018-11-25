@@ -54,14 +54,31 @@ class Parser
     end
 
 
-    # SKIP FUNC: skips the specified word type
+    # skips the specified word type, it peeks at the word_list
+    # and pops off the word if it matches the word_type
     def self.skip(word_list, word_type)
         while Parser.peek(word_list) == word_type
             Parser.match(word_list, word_type)
         end
     end
 
+    
+    # parse a verb
+    def self.parse(word_list)
+        # check to see if first word is a verb in word_list
+        # if so, remove the word from the element and return 
+        # the word
+        if Parser.peek(word_list) == 'verb'
+            return Parser.match(word_list, 'verb')
+        # else, raise an error
+        else
+            raise ParseError.new("Expected a verb next.")
+        end
+    end
 
+
+    # parse an object
+    
 
 end
 
