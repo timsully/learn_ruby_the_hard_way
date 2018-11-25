@@ -18,3 +18,15 @@ class Sentence
     attr_reader :verb
     attr_reader :object, :number
 end
+
+class Parser
+    # parser will take word_list and returns string or nil
+    def self.peek(words_list)
+        if words_list
+            word = words_list[0]
+            return word[0]
+        else
+            return nil
+        end
+    end
+end
