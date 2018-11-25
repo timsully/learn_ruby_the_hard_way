@@ -54,6 +54,14 @@ class Parser
     end
 
 
-    
+    # SKIP FUNC: skips the specified word type
+    def self.skip(word_list, word_type)
+        while Parser.peek(word_list) == word_type
+            Parser.match(word_list, word_type)
+        end
+    end
+
+
+
 end
 
