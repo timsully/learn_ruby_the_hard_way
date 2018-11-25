@@ -63,7 +63,7 @@ class Parser
     end
 
     
-    # parse a verb
+    # parse a 'verb'
     def self.parse(word_list)
         # check to see if first word is a verb in word_list
         # if so, remove the word from the element and return 
@@ -78,7 +78,19 @@ class Parser
 
 
     # parse an object
-    
+    def self.parse_object(word_list)
+        Parser.skip(word_list, 'stop')
+        next_word = Parser.peek(word_list)
+
+        if next_word == 'noun'
+            return match(word_list, 'noun')
+        elsif next_word == 'direction'
+            return match(word_list, 'direction')
+        else
+            raise ParseError.new("Expected a noun or direction next.")
+        end
+    end
+
 
 end
 
