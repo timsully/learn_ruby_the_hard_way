@@ -92,5 +92,33 @@ class Parser
     end
 
 
+    # parsing a noun
+    def self.parse_subject(word_list)
+        Parser.skip(word_list, 'stop')
+        next_word = Parser.peek(word_list)
+
+        if next_word == 'noun'
+            return Parser.match(word_list, 'noun')
+        # if next word is a verb, assume that the next sentence is 
+        # missing a subject and we add a 'player' word for the subject
+        elsif next_word == 'verb'
+            return ['noun', 'player']
+        else
+            raise ParseError.new("Expected a verb next.")
+        end
+    end
+
+
+    # Sentence structure of output below Sentence + Verb + Object ?
+    # parse the sentence
+    def self.parse_sentence(word_list)
+        subject = Parser.parse_subject(word_list)
+        verb = Parser.parse_verb(word_list)
+        number = Parser.parse_number(word_list)
+        object = Parser.parse_object(word_list)
+
+        return Sentence.new(subject, verb, number, object)
+    end
+
 end
 
