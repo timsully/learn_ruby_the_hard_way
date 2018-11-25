@@ -1,6 +1,7 @@
 class ParseError < Exception
 end
 
+
 class Sentence
     # we take the ['direction', 'north'] pairs and convert them
     # to subject verb and object
@@ -19,6 +20,7 @@ class Sentence
     attr_reader :object, :number
 end
 
+
 class Parser
     # parser will take word_list and returns string or nil
     def self.peek(words_list)
@@ -31,4 +33,27 @@ class Parser
             return nil
         end
     end
+
+    
+    # takes a word_list and an expecting parameter, it either
+    # returns a word or nil
+    def self.match(word_list, expecting)
+        # if the word_list is not empty remove the first word 
+        # element and if it's 'expecting' type returns the word
+        if word_list
+            word = word_list.shift
+
+            if word[0] == expecting
+                return word
+            else
+                return nil
+            end
+        else
+            return nil
+        end
+    end
+
+
+    
 end
+
