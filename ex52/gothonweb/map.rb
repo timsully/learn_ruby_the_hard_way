@@ -97,4 +97,61 @@ class Room
         into jam jelly.
         """)
 
+
+    ESCAPE_POD.add_paths({
+        '2' => THE_END_WINNER,
+        '*' => THE_END_LOSER
+    })
+
+
+    GENERIC_DEATH = Room.new("death", "You died.")
+
+
+    THE_BRIDGE.add_paths({
+        'throw the bomb' => GENERIC_DEATH,
+        'slowly place the bomb' => ESCAPE_POD
+    })
+
+
+    LASER_WEAPON_ARMORY.add_paths({
+        '0132' => THE_BRIDGE,
+        '*' => GENERIC_DEATH
+    })
+
+
+    CENTRAL_CORRIDOR.add_paths({
+        'shoot!' => GENERIC_DEATH,
+        'dodge!' => GENERIC_DEATH,
+        'tell a joke' => LASER_WEAPON_ARMORY
+    })
+
+
+    START = CENTRAL_CORRIDOR
+
+
+    # A whitelist of allowed room names. We use this so that
+    # bad people on the internet can't access random variables
+    # with names. You can Test::constants and Kernel.const_get as well.
+    ROOM_NAMES = {
+        'CENTRAL_CORRIDOR' => CENTRAL_CORRIDOR,
+        'LASER_WEAPON_ARMORY' => LASER_WEAPON_ARMORY,
+        'THE_BRIDGE' => THE_BRIDGE,
+        'ESCAPE_POD' => ESCAPE_POD,
+        'THE_END_WINNER' => THE_END_WINNER,
+        'THE_END_LOSER' => THE_END_LOSER,
+        'START' => START
+    }
+
+
+    def Map::load_room(sessions)
+        # Given a session this will return the right toom or nil
+        return ROOM_NAMES[session[:room]]
+    end
+
+
+    def Map::save_room
+        # Store the room in the session for later, using its name
+        session[:room] = ROOM_NAMES.key(room)
+    end
+
 end
