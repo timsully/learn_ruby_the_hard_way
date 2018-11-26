@@ -143,13 +143,13 @@ class Room
     }
 
 
-    def Map::load_room(sessions)
+    def Map::load_room(session)
         # Given a session this will return the right toom or nil
         return ROOM_NAMES[session[:room]]
     end
 
 
-    def Map::save_room
+    def Map::save_room(session, room)
         # Store the room in the session for later, using its name
         session[:room] = ROOM_NAMES.key(room)
     end
