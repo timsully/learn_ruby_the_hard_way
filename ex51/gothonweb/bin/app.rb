@@ -9,8 +9,13 @@ get '/' do
     return 'Hello World'
 end
 
-# specifies what the browser does when it goes to localhost:8080/hello/
 get '/hello/' do
+    erb :hello_form
+end
+
+post '/hello/' do 
     greeting = params[:greeting] || "Hi There"
-    erb :index, :locals => {'greeting' => greeting}
+    name = params[:name] || "Nobody"
+
+    erb :index, :locals => {'greeting' => greeting, 'name' => name}
 end
