@@ -94,3 +94,5 @@ This repository will contain all the exercise files I create to practice dabblin
 - [x] [Exercise 50 - Your First Website](https://github.com/timsully/learn_ruby_the_hard_way/tree/master/ex50/gothonweb)
 
 - [x] [Exercise 51 - Getting Input from a Browser](https://github.com/timsully/learn_ruby_the_hard_way/tree/master/ex51/gothonweb)
+
+- [x] [Exercise 52 - The Start of Your Web Game](https://github.com/timsully/learn_ruby_the_hard_way/tree/master/ex52/gothonweb)
