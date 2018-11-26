@@ -92,3 +92,5 @@ This repository will contain all the exercise files I create to practice dabblin
 - [x] [Exercise 49 - Making Sentences](https://github.com/timsully/learn_ruby_the_hard_way/blob/master/ex49_parser.rb)
 
 - [x] [Exercise 50 - Your First Website](https://github.com/timsully/learn_ruby_the_hard_way/tree/master/ex50/gothonweb)
+
+- [x] [Exercise 51 - Getting Input from a Browser](https://github.com/timsully/learn_ruby_the_hard_way/tree/master/ex51/gothonweb)
