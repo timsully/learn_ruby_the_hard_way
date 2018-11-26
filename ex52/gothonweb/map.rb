@@ -33,6 +33,7 @@ class Room
         to pull a weapon to blast you.
         """)
 
+
     LASER_WEAPON_ARMORY = Room.new("""
         Lucky for you they made you learn Gothon insults in the academy. You tell 
         the one Gothon joke you know: Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur
@@ -48,5 +49,52 @@ class Room
         If you get the code wrong 10 times then the lock closes forever and you can't
         get the bomb.  The code is 3 digits.
         """)        
+
+
+    THE_BRIDGE = Room.new("""
+        The container clicks open and the seal breaks, letting gas out. You grab the 
+        neutron bomb and run as fast as you can to the bridge where you must place it 
+        in the right spot.
+        \n
+        You burst onto the Bridge with the netron destruct bomb under your arm and surprise
+        5 Gothons who are trying to take control of the ship. Each of them has an even uglier
+        clown costume than the last. They haven't pulled their weapons out yet, as they see
+        the active bomb under your arm and don't want to set it off.
+        """)
+
+
+    ESCAPE_POD = Room.new("""
+        You point your blaster at the bomb under your arm and the Gothons put their hands up
+        and start to sweat. You inch backward to the door, open it, and then carefully place 
+        the bomb on the floor, pointing your blaster at it. You then jump back through the 
+        door, punch the close button and blast the lock so the Gothons can't get out. Now 
+        that the bomb is placed you run to the escape pod to get off this tin can.
+        \n
+        You rush through the ship desperately trying to make it to
+        the escape pod before the whole ship explodes.  It seems like
+        hardly any Gothons are on the ship, so your run is clear of
+        interference.  You get to the chamber with the escape pods, and
+        now need to pick one to take.  Some of them could be damaged
+        but you don't have time to look.  There's 5 pods, which one
+        do you take?        
+        """)
+
+
+    THE_END_WINNER = Room.new("""
+      You jump into pod %s and hit the eject button.
+      The pod easily slides out into space heading to
+      the planet below.  As it flies to the planet, you look
+      back and see your ship implode then explode like a
+      bright star, taking out the Gothon ship at the same
+      time. You won!
+      """)
+
+
+    THE_END_LOSER = Room.new("""
+        You jump into pod and hit the eject button.
+        The pod escapes out into the void of space, then
+        implodes as the hull ruptures, crushing your body
+        into jam jelly.
+        """)
 
 end
